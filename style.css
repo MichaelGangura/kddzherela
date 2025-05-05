@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .ponomar-regular {
+    font-family: "Ponomar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-flex {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.b {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.bb {
+    font-weight: bold;
+}
+
+.straight {
+    font-style: normal;
+}
+
+.bigger {
+    font-size: 1.1rem;
+}
+
+.al {
+    text-align: right;
+}
+
+h2, p {
+    padding: 0;
+    margin: 0;
+}
+
+h2, a {
+    color:#2d1900
+}
+
+p {
+    padding: 5px 0;
+}
+
+body {
+    background-image: url(paper.jpg);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 7fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 50px;
+    padding: 25px;
+    color: #2d1900;
+    height: 100vh;
+    }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+}
+
+.cross-d, .cite {
+    flex-basis: 350px;
+}
+
+.h {
+  flex-basis: 420px;
+}
+
+.cross-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    column-gap: 50px;
+}
+
+article {
+    flex-basis: 350px;
+    
+}
+
+.a-container {
+    margin-bottom: 50px;
+}
+
+.a-text {
+    color: #fff
+}
+
+@media (max-width: 1200px) {
+    header {
+        flex-direction: column;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        height: 90vh;
+    }
+}
