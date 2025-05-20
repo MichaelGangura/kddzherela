@@ -49,7 +49,7 @@ p {
 }
 
 body {
-    background-image: url(paper.jpg);
+    background-image: url(paper.webp);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 7fr;
