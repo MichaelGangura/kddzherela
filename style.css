@@ -62,7 +62,7 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     padding: 20px;
@@ -81,6 +81,12 @@ h1, h3 {
 }
 
 .cross-d {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
