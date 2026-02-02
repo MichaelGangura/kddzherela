@@ -1,18 +1,29 @@
 * {
     box-sizing: border-box;
-  }
-  
-  .ponomar-regular {
+}
+
+/* ponomar-regular - cyrillic_latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ponomar';
+    font-style: normal;
+    font-weight: 400;
+    src: url('ponomar-v5-cyrillic_latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+.ponomar-regular {
     font-family: "Ponomar", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .roboto-flex {
-    font-family: "Roboto Flex", sans-serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
     font-weight: 400;
     font-style: italic;
-  }
+}
 
 .b {
     font-weight: bold;
@@ -35,13 +46,15 @@
     text-align: right;
 }
 
-h2, p {
+h2,
+p {
     padding: 0;
     margin: 0;
 }
 
-h2, a {
-    color:#2d1900
+h2,
+a {
+    color: #2d1900
 }
 
 p {
@@ -58,7 +71,7 @@ body {
     padding: 25px;
     color: #2d1900;
     height: 100vh;
-    }
+}
 
 header {
     display: flex;
@@ -68,16 +81,18 @@ header {
     padding: 20px;
 }
 
-h1, h3 {
+h1,
+h3 {
     text-align: center;
 }
 
-.cross-d, .cite {
+.cross-d,
+.cite {
     flex-basis: 350px;
 }
 
 .h {
-  flex-basis: 420px;
+    flex-basis: 420px;
 }
 
 .cross-d {
@@ -101,7 +116,7 @@ main {
 
 article {
     flex-basis: 350px;
-    
+
 }
 
 .a-container {
@@ -110,6 +125,15 @@ article {
 
 .a-text {
     color: #fff
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 @media (max-width: 1200px) {
