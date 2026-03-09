@@ -79,7 +79,7 @@
         }
 
         body {
-            background-image: url(paper.webp);
+            /*background-image: url(paper.webp);*/
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 7fr;
@@ -175,7 +175,7 @@
 
 </head>
 
-<body>
+<body class="lozad" data-background-image="paper.webp">
     <header>
         <div class="img">
             <img src="ugcc_cross_br.svg" alt="cross" class="cross" width="80" height="80">
@@ -294,6 +294,13 @@
         <p>© 2025 Корисні духовні джерела, автор сторінки парафіянин Храму Успіння Пресвятої Богородиці УГКЦ</p>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+        const observer = lozad(); // ініціалізація
+        observer.observe();
+    </script>
+
 </body>
 
 </html>
